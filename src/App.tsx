@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import {  useState } from 'react'
 import axios from 'axios'
 import './App.css'
 
@@ -7,7 +7,7 @@ function App() {
   let [inputque, setinputque] = useState<string>("")
   let [loading, setLoading] = useState<boolean>(false); // Track loading state
 
-  let [localvalue, setlocalvalue] = useState<any>(null)
+  // let [localvalue, setlocalvalue] = useState<any>(null)
   let allData: Array<{ key: string | null, value: string | null }> = []
 
   for (let i = 0; i < localStorage.length; i++) {
